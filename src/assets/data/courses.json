@@ -1,0 +1,35 @@
+{
+    "courses":[
+    {
+        "courseId":1,
+        "name":"Angular",
+        "imgPath":"../../assets/images/angular-logo.png",
+        "description":"Angular is the most powerful UI framework which can be used to develop complex, customizable,modern, responsive and user friendly web applications.",
+        "level": "Beginner",
+        "time":"38h 8m"
+    },
+    {
+        "courseId":2,
+        "name":"React",
+        "imgPath":"../../assets/images/react-logo.png",
+        "description":"ReactJS is a Javascript library for building User Interfaces, created by Jordan Walke.",
+        "level": "Beginner",
+        "time":"16h 10m"
+    },
+    {
+        "courseId":3,
+        "name":"Node JS",
+        "imgPath":"../../assets/images/node-logo.png",
+        "description":"Node.js is a JavaScript runtime environment to build fast scalable network applications.",
+        "level": "Beginner",
+        "time":"21h 20m"
+    },
+    {
+        "courseId":4,
+        "name":"Polymer",
+        "imgPath":"../../assets/images/polymer-logo.png",
+        "description":"Polymer.js is a javascript library to create custom and reusable HTML elements that can be used to build web components in UI applications",
+        "level": "Beginner",
+        "time":"15h 10m"
+    }
+]}

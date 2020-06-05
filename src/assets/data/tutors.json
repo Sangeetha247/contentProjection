@@ -1,0 +1,48 @@
+{
+    "tutors":[
+        {
+            "tutorId":1,
+            "name":"Anand",
+            "dob":"Nov 11, 1985",
+            "gender":"Male",
+            "photopath":"../../assets/images/man-avatar.png",
+            "phone":"6756459878",
+            "active":true
+        }, {
+            "tutorId":2,
+            "name":"Priya",
+            "dob":"Jul 20, 1990",
+            "gender":"Female",
+            "photopath":"../../assets/images/woman-avatar.png",
+            "phone":"7896785645",
+            "active":true
+        },
+        {
+            "tutorId":3,
+            "name":"Victor",
+            "dob":"Dec 1, 1994",
+            "gender":"Male",
+            "photopath":"../../assets/images/man-avatar.png",
+            "phone":"6238686860",
+            "active":true
+        },
+        {
+            "tutorId":4,
+            "name":"Asif",
+            "dob":"May 6, 1987",
+            "gender":"Male",
+            "photopath":"../../assets/images/man-avatar.png",
+            "phone":"9876345620",
+            "active":false
+        },
+        {
+            "tutorId":5,
+            "name":"Malini",
+            "dob":"Sep 10, 1997",
+            "gender":"Female",
+            "photopath":"../../assets/images/woman-avatar.png",
+            "phone":"9234729797",
+            "active":true
+        }
+    ]
+}

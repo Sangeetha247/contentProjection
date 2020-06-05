@@ -1,0 +1,38 @@
+<!-- Pass employee name as the value for title input property. Also set
+     isHidden input propety to false if you want the panel body and footer
+     to be collapsed on the initial page load.-->
+<app-accordion [title]="tutor.name" [isHidden]="true" [isFooter]="false">
+    <!-- Notice myCardBody css class is present on this <div>. This CSS class is
+            used as the selector on the <ng-content> tag in accordion component. So all this
+            content in this DIV will be projected at the location where we have <ng-content>
+            tag with css class selector .myCardBody -->
+    <div class="myCardBody">
+        <div class="d-flex">
+            <div>
+                <img class="imageClass" [src]="tutor.photopath" [alt]="tutor.name" />
+            </div>
+            <div class="flex-grow-1">
+                <div class="d-flex text-left">
+                    <span class="wd-125"> Gender</span>
+                    <span class="flex-fill"> : {{tutor.gender}} </span>
+                </div>
+                <div class="d-flex text-left">
+                    <span class="wd-125"> Date of Birth</span>
+                    <span class="flex-fill"> : {{tutor.dob}} </span>
+                </div>
+                <div class="d-flex text-left">
+                    <span class="wd-125"> Phone</span>
+                    <span class="flex-fill"> : {{tutor.phone}} </span>
+                </div>
+                <div class="d-flex text-left">
+                    <span class="wd-125"> Active</span>
+                    <span class="flex-fill">: {{tutor.active?'Yes':'No'}} </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The content in the following DIV will be projected at the location
+            where we have <ng-content> tag with css selector .myCardFooter -->
+    <!-- <div class="myCardFooter">
+    </div> -->
+</app-accordion>

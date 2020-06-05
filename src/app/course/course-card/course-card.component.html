@@ -1,0 +1,26 @@
+<!-- Pass employee name as the value for title input property. Also set
+     isHidden input propety to false if you want the panel body and footer
+     to be collapsed on the initial page load.-->
+     <app-accordion [title]="course.name" [isHidden]="true" [isFooter]="true">
+     <!-- Notice myCardBody css class is present on this <div>. This CSS class is
+     used as the selector on the <ng-content> tag in accordion component. So all this
+     content in this DIV will be projected at the location where we have <ng-content>
+     tag with css class selector .myCardBody -->
+     <div class="myCardBody">
+        <!-- <img class="imageClass" [src]="course.imgPath" [alt]="course.name"/> 
+        <span> {{course.description}}</span> -->
+       <div class="vertical-align">
+         <div>
+           <img class="imageClass" [src]="course.imgPath" [alt]="course.name"/>
+         </div>
+         <div class="text-justify">
+             {{course.description}}
+         </div>
+       </div>
+     </div>
+     <!-- The content in the following DIV will be projected at the location
+     where we have <ng-content> tag with css selector .myCardFooter -->
+     <div class="">
+        <span> Course | {{course.level}} | {{course.time}} </span>
+     </div>
+     </app-accordion>
